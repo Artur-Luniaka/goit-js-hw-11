@@ -30,3 +30,39 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 15px;
+}
+
+.form-input {
+  padding: 5px;
+  outline: none;
+  transition: border 300ms ease-out;
+}
+
+.form-input:focus,
+.form-input:hover {
+  border: 1px solid blue;
+}
+
+.form-btn {
+  padding: 5px 10px;
+  background-color: blue;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: background-color 300ms ease-out, color 300ms ease-out,
+    border 300ms ease-out;
+}
+
+.form-btn:focus,
+.form-btn:hover {
+  background-color: transparent;
+  border: 1px solid darkblue;
+  color: darkblue;
+}
